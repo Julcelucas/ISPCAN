@@ -6,8 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ispcan</title>
     <link rel="shortcut icon" href="imagens/cardeal-ico.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/estilo-principal.css">
+    <link rel="stylesheet" href="estilos/estilo-header.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="estilos/estilo-slides.css">
 </head>
 <body>
+    <header>
+        <!-- Cabeçalho com menu-->
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"> <div> <img src="imagens/cardeal-ico.png" alt="logo"><p>Instituto Dom <br> Cardeal Alexandre <br> do Nascimento</p></div></li>
+                <input type="checkbox" name="check" id="icheck">
+                <span class="menu"> 
+                   
+                    <li><a href="ispcan.html">Início</a></li>
+                    <li><a href="nav/cursos.html">Cursos</a></li>
+                    <li><a href="nav/noticias.html">Noticías</a></li>
+                    <li><a href="nav/actividades.html">Actividades</a></li>
+                    <li><a href="nav/inscrições.html">Inscrições</a></li>
+                    <li><a href="nav/biblioteca.html">Biblioteca Virtual</a></li>
+                    <li> <a href="nav/contacte.html">Contacte-nos</a></li>
+                    <li><a href="nav/sobre.html">Sobre</a></li>
+                    
+                    <label for="icheck" class="close-menu"> <span class="material-symbols-outlined">close</span></label>
+                </span>
+                <label for="icheck" class="open-menu"> <span class="material-symbols-outlined">menu</span></label>
+            </ul>
+        </nav>
+         <!-- Fim do cabeçalho com menu-->
+
+         <!--Criando os slides-->
+         <div class="slider">
+        
+            <div class="slides">
+                <!-- Botoes de radio-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <!-- Botoes de radio fim-->
     
+                <!--Slides de imagens-->
+                <div class="slide first">
+                    <img src="imagens/slides/imagem2.jpg" alt="imagem1">
+                </div>
+                <div class="slide">
+                    <img src="imagens/slides/imagem1.jpg" alt="imagem2">
+                </div>
+                <!--Slides de imagens fim-->
+    
+                 <!--Bolinhas de navegacao-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+                <!--Bolinhas de navegacao-->
+            </div>
+    
+            <!-- Label Navegacao-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+            <!-- Label Navegacao-->
+        </div>
+        <!--Fim dos slides-->
+
+    </header>
+    <script src="script.js"></script>
 </body>
 </html>
